@@ -1,0 +1,51 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "firebase.json.backup",
+      "firebase-production.json",
+      "firebase-debug.log",
+      "**/.*",
+      "**/node_modules/**",
+      "node_modules/**",
+      "backend-files/**",
+      "functions/**",
+      "public/**",
+      ".vscode/**",
+      ".chrome-user-data/**",
+      "*.backup*",
+      "*.md",
+      "input.css",
+      "tailwind.config.js",
+      "package.json",
+      "package-lock.json",
+      "update-backend-url.js",
+      "index.js_backup.js",
+      "index.html",
+      "404.html",
+      "Kimatai v9.3.html",
+      "Kimatai v9.4.html",
+      "Kimatai v9.5.html"
+    ],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/Kimatai v9.7.html"
+      }
+    ]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "functions": [
+    {
+      "codebase": "default",
+      "source": "functions",
+      "ignore": [
+        "node_modules",
+        ".git"
+      ]
+    }
+  ]
+}
