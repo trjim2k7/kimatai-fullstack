@@ -1,0 +1,21 @@
+{
+  "name": "kimatai-fullstack",
+  "version": "1.0.0",
+  "description": "KimatAI - AI-Powered Travel Planning Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && node server.js",
+    "frontend": "cd frontend && python -m http.server 5000",
+    "test": "cd backend && node test-chat-endpoint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trjim2k7/kimatai-fullstack.git"
+  },
+  "keywords": ["travel", "ai", "itinerary", "planning"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
