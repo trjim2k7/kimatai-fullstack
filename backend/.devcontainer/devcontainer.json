@@ -1,0 +1,16 @@
+{
+  "name": "node-dev",
+  "postCreateCommand": "npm ci || npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": { "label": "backend", "onAutoForward": "openBrowser" },
+    "5173": { "label": "frontend", "onAutoForward": "openBrowser" }
+  }
+}
